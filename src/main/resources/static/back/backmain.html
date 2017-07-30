@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>取经系统后台管理系统</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/amazeui.min.css" rel="stylesheet" />
+	<link href="../css/pagination.css" rel="stylesheet" />
+	<link href="./back.css" rel="stylesheet" />
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/WdatePicker.css" rel="stylesheet" />
+	<script src="../libs/jquery.min.js"></script>
+    <script src="../libs/pagination.js"></script>
+    <script src="../libs/WdatePicker.js"></script>
+	<script src="../libs/echarts-all.js"></script>
+</head>
+	
+<body data-target=".bs-docs-sidebar">
+
+<header class="am-topbar am-topbar-inverse" style="min-width: 1000px">
+  	<h1 class="am-topbar-brand">
+    		<a href="#" >闪融网后台管理系统</a>
+  	</h1>
+	<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+	<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+		<ul class="am-nav am-nav-pills am-topbar-nav js-top-nav"style="margin: 0px;" id="sys-nav">
+			<li id="js-overview" class="js-top-menu am-active"><a><i class="am-icon-cloud" title="信息概览"></i></a></li>
+		</ul>
+		
+		<div class="am-topbar-right" style="min-width: 180px;">
+			<button id="btn-logout" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" >退出登录</button>
+		</div>
+		
+		<div class="am-topbar-right back-setting" >
+			<i class="am-icon-gear" title="云系统设置"></i>
+		</div>
+	</div>
+</header>
+<div style="width: 100%;height:62px;"></div>
+<nav class="bs-backmain-sidebar">
+    <ul class="nav bs-backmain-sidenav" >
+    		<li id="card" class="li-entry">
+		  	<a class="js-menu">
+		  		<span><i style="font-size: 12px;" class="am-icon-sellsy"></i></span>
+		  		办卡申请
+		  	</a>
+		</li>
+    		<li id="credit" class="li-entry">
+		  	<a class="js-menu">
+		  		<span><i style="font-size: 12px;" class="am-icon-hand-stop-o"></i></span>
+		  		贷款申请
+		  	</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="doc-container" id="content"></div>
+<div id="showView" style="width: 60%;left: 25%;top: 20%;position:absolute" class="hidden showView"></div>
+<div class="showView hidden" id="showViewX" style="cursor:pointer;position: absolute;width: 20px;height: 20px;background: #C3C1C1;font-size:15px;padding-left:5px;color:#504B4B;border-radius: 15px;right: 15.3%;top: 20.6%;">X</div>
+</body>
+<script charset=utf-8 data-main=./backmain.js src=../libs/require.js></script>
+</html>

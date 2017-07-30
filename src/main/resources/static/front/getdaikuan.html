@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+    <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta content="telephone=no" name=format-detection>
+    <link href=../css/mui.css rel=stylesheet>
+    <link href=../css/app.css rel=stylesheet>
+</head>
+
+<body id=index style="background:#ebebeb;" class=index>
+	
+    <nav class="mui-bar mui-bar-tab" style="top:0px;">
+    	<a class="mui-tab-item" style="text-align: left;" href="daikuan.html">
+   	 	<span class="mui-icon mui-icon-back" style="top:0px"></span>
+    </a>
+    <a href="#"class="mui-tab-item disable">
+    	</a>
+    	<a data-ignore="push" class="mui-tab-item disable" >
+    		贷款中心
+    	</a> 
+    	<a href="#popover"class="mui-tab-item disable">
+    	</a>
+    	<a href="#popover"class="mui-tab-item disable">
+    	</a>
+    </nav>
+	
+	<div class="mui-content">
+		<div class="img-back">
+			<img src="../img/getdaikuan.jpg" style="width: 100%;"/>
+			<form>
+			<div class="mui-input-row mui-input-range" style="top: 6.9%;left: 1%;height: 16%;">
+			    <input type="range" id="numselect" min="3" max="230" value="3">
+			    <input type="text" name="num" readonly="true" value="3000元" />
+			</div>
+			<div class="mui-input-row mui-input-range" style="top: 16.5%;left: 1%;height: 16%;">
+			    <input type="range" id="duringselect" min="1" max="192" value="1">
+			    <input type="text" name="during" readonly="true" value="7天" />
+			</div>
+			
+			<div class="js-input-c none-border js-input-age" data-v="22岁以下" style="left:31.4%;top:28.3%;"></div>
+			<div class="js-input-c none-border js-input-age" data-v="23-27岁" style="left:50.8%;top:28.3%;"></div>
+			<div class="js-input-c none-border js-input-age" data-v="28-55岁" style="left:70.2%;top:28.3%;"></div>
+			<div class="js-input-c none-border js-input-age" data-v="56-60岁" style="left:31.6%;top:33.1%;"></div>
+			<div class="js-input-c none-border js-input-age" data-v="60岁以上" style="left:50.9%;top:33.1%;"></div>
+			<input type="hidden" name="age"value="" />
+
+			<div class="js-input-c none-border js-input-career" data-v="学生" style="left:31.7%;top:38.9%;"></div>
+			<div class="js-input-c none-border js-input-career" data-v="上班族" style="left:51%;top:38.9%;"></div>
+			<div class="js-input-c none-border js-input-career" data-v="企业主" style="left:71%;top:38.9%;"></div>
+			<div class="js-input-c none-border js-input-career" data-v="自由职业" style="left:31.7%;top:43.2%;"></div>
+			<input type="hidden" name="career"value="" />
+			
+			<div class="js-input-c none-border js-input-city" data-v="武汉" style="left:31.6%;top:48.7%;"></div>
+			<div class="js-input-c none-border js-input-city" data-v="北京" style="left:50.8%;top:48.7%;"></div>
+			<div class="js-input-c none-border js-input-city" data-v="上海" style="left:71.4%;top:48.7%;"></div>
+			<div class="js-input-c none-border js-input-city" data-v="深圳" style="left:31.6%;top:53.3%;"></div>
+			<input type="hidden" name="city"value="" />
+			
+			<div style="top:66.9%;left:61%" class="js-input-2">
+			  <input name="yuqi" value="1" type="checkbox">
+			</div>
+			<div style="top:66.9%;left:78.4%" class="js-input-2">
+			  <input name="yuqi" value="0" type="checkbox">
+			</div>
+			<div style="top:72.4%;left:61%" class="js-input-2">
+			  <input name="gongjijin" value="1" type="checkbox">
+			</div>
+			<div style="top:72.4%;left:78.4%" class="js-input-2">
+			  <input name="gongjijin" value="0" type="checkbox">
+			</div>
+			<div style="top:77.9%;left:61%" class="js-input-2">
+			  <input name="baoxian" value="1" type="checkbox">
+			</div>
+			<div style="top:77.9%;left:78.4%" class="js-input-2">
+			  <input name="baoxian" value="0" type="checkbox">
+			</div>
+			<div style="top:83.4%;left:61%" class="js-input-2">
+			  <input name="chedai" value="1" type="checkbox">
+			</div>
+			<div style="top:83.4%;left:78.4%" class="js-input-2">
+			  <input name="chedai" value="0" type="checkbox">
+			</div>
+			<div style="top:88.8%;left:61%" class="js-input-2">
+			  <input name="fangchan" value="1" type="checkbox">
+			</div>
+			<div style="top:88.8%;left:78.4%" class="js-input-2">
+			  <input name="fangchan" value="0" type="checkbox">
+			</div>
+		</div>
+		<div class="phone-pass2">
+			<div class="phone">
+				<input name="phone" placeholder="请输入手机号" value="" type="text">
+				<input name="valicode" placeholder="请输入手机验证码" value="" type="text">
+			</div>
+			<div class="send-txt">
+				请输入您的手机号码
+			</div>
+			<button type="button" class="mui-btn js-send-btn">发送验证码</button>
+			<button type="button" class="submit-btn">提交申请</button>
+		</div>
+		</form>
+	</div>
+	
+</body>
+<script charset=utf-8 data-main=../js/main.js src=../js/require.js></script>
+<script charset=utf-8 src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		setTimeout(function(){
+			$.get("../img/successdai.jpg", function(){
+			});
+		},5000)
+	});
+</script>
+</html>

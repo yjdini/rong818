@@ -2,13 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>闪融云-专注于普惠金融垂直服务平台</title>
 
     <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name=apple-mobile-web-app-capable content=yes>
     <meta content="telephone=no" name=format-detection>
     <link href=../css/mui.css rel=stylesheet>
     <link href=../css/app.css rel=stylesheet>
+    <style>
+        .call{
+            position: absolute;
+            top: 68%;
+            width: 100%;
+            text-align: center;
+            color:#2b2b2b;
+            font-size: 16px;
+        }
+        .call button{
+            height: 28px;
+            padding-top: 4px;
+            margin-top: 10px;
+        }
+        .call button a{
+            color: #fff;
+        }
+        .none{
+            display: none;
+        }
+    </style>
 </head>
 
 <body id=index style="background:#ebebeb;" class=index>
@@ -29,7 +50,18 @@
 	
 	<div class="mui-content">
 		<img src="../img/successdai.jpg" style="width: 100%;"/>
+        <div class="call none">
+            您也可以直接 <br>
+            <button type="button" class="mui-btn mui-btn-success"><a id="call">拨打电话咨询</a></button>
+        </div>
 	</div>
 </body>
-<script charset=utf-8 data-main=../js/main.js src=../js/require.js></script>
+<script charset=utf-8 src="../js/jquery.min.js"></script>
+<script>
+var p = localStorage.getItem('next-phone');
+if (p) {
+    $('#call').attr('href',"tel:"+p);
+    $('.call').removeClass('none')
+}
+</script>
 </html>
